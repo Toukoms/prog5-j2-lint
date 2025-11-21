@@ -15,7 +15,7 @@ public class Wallet {
     System.out.println("Money " + amount + " added to the wallet.");
   }
 
-  public double getWallet_money() {
+  public double getWallet() {
     return this.money;
   }
 
