@@ -3,7 +3,7 @@ package com.tokiniaina.wallet;
 public class Wallet {
   private String color;
   private int size;
-  private double wallet_money;
+  private double money;
 
   Wallet(String color, int size) {
     this.color = color;
@@ -11,12 +11,12 @@ public class Wallet {
   }
 
   public void addMoney(double amount) {
-    this.wallet_money += amount;
+    this.money += amount;
     System.out.println("Money " + amount + " added to the wallet.");
   }
 
-  public double getWallet() {
-    return this.wallet_money;
+  public double getWallet_money() {
+    return this.money;
   }
 
   public void open() {
@@ -33,6 +33,6 @@ public class Wallet {
   }
 
   public void checkStatus() {
-    System.out.println("Wallet color: " + this.color + ", size: " + this.size + ", money: " + this.wallet_money);
+    System.out.println("Wallet color: " + this.color + ", size: " + this.size + ", money: " + this.money);
   }
 }
