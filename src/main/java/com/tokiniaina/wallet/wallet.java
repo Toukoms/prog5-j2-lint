@@ -1,22 +1,22 @@
 package com.tokiniaina.wallet;
 
-public class wallet {
+public class Wallet {
   private String color;
   private int size;
-  private double money;
+  private double wallet_money;
 
-  wallet(String color, int size) {
+  Wallet(String color, int size) {
     this.color = color;
     this.size = size;
   }
 
   public void addMoney(double amount) {
-    this.money += amount;
+    this.wallet_money += amount;
     System.out.println("Money " + amount + " added to the wallet.");
   }
 
-  public double getMoney() {
-    return this.money;
+  public double getWallet() {
+    return this.wallet_money;
   }
 
   public void open() {
@@ -33,6 +33,6 @@ public class wallet {
   }
 
   public void checkStatus() {
-    System.out.println("Wallet color: " + this.color + ", size: " + this.size + ", money: " + this.money);
+    System.out.println("Wallet color: " + this.color + ", size: " + this.size + ", money: " + this.wallet_money);
   }
 }
